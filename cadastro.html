@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/hat.png" type="image/x-icon">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Cadastro - Witch's House</title>
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="../imagens/logo.png" class="logo" alt="Witch's House"></a>
+        <ul>
+        <a href="loja.html" tabindex="0"><li>Produtos</li></a> 
+        <a href="contato.html" tabindex="1"><li>Contato</li></a> 
+        </ul>
+    </header>  
+    <div id="container">           
+        <div id="camada1">
+            <img class="camada1" id="rip" src="../imagens/Background floresta/Ativo 7.svg" alt="Tumulo">
+            <img class="camada1" id="bat" src="../imagens/Background floresta/Ativo 8.svg" alt="Morcegos">
+            <img class="camada1" id="pedra" src="../imagens/Background floresta/Ativo 13.svg" alt="Nuvem">
+            <img class="camada1" id="nuvem-right-cima" src="../imagens/Background floresta/nuvem right cima.svg" alt="Nuvem">
+            <img class="camada1" id="nuvem-left" src="../imagens/Background floresta/nuvem left.svg" alt="Nuvem">
+            <img class="camada1" id="nuvem-right-baixo" src="../imagens/Background floresta/nuvem rigth baixo.svg" alt="Nuvem">
+        </div>     
+        <main>
+            <h1>Bem vindo a Witch's House</h1>
+                <form action="#" method="post">
+                    <div id="row1" class="rows">
+                        <div class="posicionamento">
+                            <input type="text" class="nome" name="nome" required>
+                            <label for="nome" class="nome">NOME</label>
+                        </div>
+                        <div class="posicionamento">
+                            <input type="text" class="sobrenome" name="sobrenome" required>
+                            <label for="sobrenome" class="sobrenome">SOBRENOME</label>
+                        </div>
+                    </div>
+                    <div id="row2" class="rows">
+                        <div class="posicionamento">
+                            <input type="email" class="email" name="email" required>
+                            <label for="email" class="email">EMAIL</label>
+                        </div>
+                    </div>
+                    <div id="row3" class="rows">
+                        <div class="posicionamento">
+                            <input type="tel" class="tel" name="tel" required>
+                            <label for="tel" class="tel">TELEFONE</label>
+                        </div>
+                        <div class="posicionamento">
+                            <input type="text" class="cep" name="cep" required>
+                            <label for="cep" class="cep">CEP</label>
+                        </div>
+                    </div>
+                    <div id="row4" class="rows">
+                        <div class="posicionamento">
+                            <input type="number" class="idade" name="idade" required>
+                            <label for="idade" class="idade">IDADE</label>
+                        </div>
+                        <div class="posicionamento">
+                            <input type="text" class="cpf" name="cpf" required>
+                            <label for="cpf" class="cpf">CPF</label>
+                        </div>
+                    </div>
+                    <div id="row5" class="rows">
+                        <div class="posicionamento">
+                            <input type="password" class="senha" name="senha" required>
+                            <label for="senha" class="senha">SENHA</label>
+                        </div>
+                    </div>
+                    <div id="row6" class="rows">
+                        <input type="submit" id="botao" value="CADASTRAR-SE">
+                        <a href="entrar.html" id="link">Já tem uma conta?</a>
+                    </div>
+                </form>
+        </main>
+        <div id="arvore">
+            <img id="arvore-left" src="../imagens/Background floresta/Ativo 1.svg" alt="Árvore">
+            <img id="arvore-right" src="../imagens/Background floresta/Ativo 3.svg" alt="Árvore">
+        </div>
+    </div>
+</body>
+</html>

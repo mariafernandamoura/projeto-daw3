@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Labrada:wght@400;500;700;900&family=Noto+Sans&display=swap');
+
+:root{
+  --cor0:#995f84;
+  --cor1:#5a969d;
+  --cor2:#f4eef2;
+  --cor3: #14101d;
+}
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html
+{
+  font-size: 62.5%;
+}
+
+body
+{
+  font-size: 1.6rem;
+  background-color: var(--cor3);
+  color: var(--cor2);
+  height: 100%;
+  width: 100%;
+}
+
+/*MENU*/
+.logo{
+  width: 18%;
+  padding-top: 15px;
+  padding-left: 28px;
+}
+  
+header{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+  
+li{
+  display: inline-block;
+  margin: 20px;
+  font-family: "Labrada",serif;
+  font-weight: 600;
+  font-size:2.3rem;
+  margin-left: 56px;
+  margin-right:32px;
+}
+        
+a{
+  color: var(--cor1);
+  text-decoration:none; 
+}
+
+a:hover
+{
+  color: var(--cor0);
+}
+
+body main{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0px;
+}
+
+/*ESQUERDA*/
+
+body main .left-div
+{
+  margin-left: 5%;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  font-family: "Labrada",serif;
+  font-weight: 800;
+  font-size: 7.5rem;
+  margin-top: 0px;
+}
+  
+h2{
+  line-height: auto;
+  font-family: "Labrada",serif;
+  font-weight: bold;
+  font-weight: 600;
+  font-size: 3.5rem;
+  margin-top: 1rem;
+}
+  
+p{
+  margin-top: 3%;
+  font-size: 1.8rem;
+  text-align: justify;
+  line-height: 2.2rem;
+  max-width: 700px;
+  font-family: "Noto Sans",sans-serif;
+}
+
+body main .left-div a
+{
+  margin-top: 15%;
+  display: block;
+  position: relative;
+  width: 40%;
+}
+
+#hat{
+  width: 40%;
+  position: absolute;
+  top: -180%;
+  left: -1%;
+}
+
+
+
+.loja-btn{
+  background-color: #995f84;
+  color: #14101d;
+  height: 6rem;
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  font-size: 2.5rem;
+  font-family: "Labrada",serif;
+  font-style: black;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.loja-btn:hover  {
+  background: linear-gradient(273deg, #3d416f,var(--cor0) );
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 4s ease infinite;
+  -moz-animation: AnimationName 4s ease infinite;
+  -o-animation: AnimationName 4s ease infinite;
+  animation: AnimationName 4s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 47%}
+  50%{background-position:100% 54%}
+  100%{background-position:0% 47%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 47%}
+  50%{background-position:100% 54%}
+  100%{background-position:0% 47%}
+}
+@-o-keyframes AnimationName {
+  0%{background-position:0% 47%}
+  50%{background-position:100% 54%}
+  100%{background-position:0% 47%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 47%}
+  50%{background-position:100% 54%}
+  100%{background-position:0% 47%}
+}
+
+/*DIREITA*/
+
+body main .right-div
+{
+  margin-right: 5%;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+body main .right-div .imagem
+{
+  width: 100%;
+}
+
+body section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 0px;
+}
+
+body section .left-div
+{
+  width: 50%;
+}
+
+
+body section .left-div .imagem 
+{
+  width: 100%;
+}
+
+body section .right-div
+{
+  margin-right: 5%;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+body section .right-div h2
+{
+text-transform: uppercase;
+font-size: 3rem;
+margin-bottom: 3rem;
+}
+
+body section .right-div p
+{
+text-transform: uppercase;
+text-align: center;
+font-size: 1.8rem;
+line-height: 2.5rem;
+}
+
+body section .right-div #tabela
+{
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 2rem;
+}
+
+body section .right-div table
+{
+  width: 60%;
+  border-collapse: collapse;
+  border: solid;
+  border-width: 2px;
+  padding: 1rem;
+}
+
+body section .right-div table td
+{
+  width: 60%;
+  border-collapse: collapse;
+  border: solid;
+  border-width: 2px;
+  padding: 1rem;
+}
+
+body section .right-div table td p.titulo
+{
+  font-size: 2.2rem;
+  font-family: "Labrada",serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+body section .right-div table td p.numero
+{
+  font-size: 2.2rem;
+  font-family: "Noto sans",serif;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+@media screen and (min-width: 1900px)
+{
+  body header li{
+    font-size:2.7rem;
+  }
+
+  body main .left-div{
+    margin-left: 8%;
+  }
+  
+  body main .left-div .loja-btn
+  {
+    height: 7rem;
+  }
+
+  body main .left-div #hat
+  {
+      width: 40%;
+      position: absolute;
+      top: -190%;
+      left: -1%;
+  }
+}
+
+
+
+@media screen and (max-width: 1380px)
+{
+
+  body header li{
+    font-size:2.7rem;
+  }
+
+  body main .left-div{
+    margin-left: 8%;
+  }
+
+  body main .left-div h1{
+    font-size: 6.5rem;
+  }
+  
+  body main .left-div h2{
+    font-size: 3rem;
+  }
+
+  body main .left-div p{
+    font-size: 1.6rem;
+    max-width: 600px;
+  }
+
+  body main .left-div #hat
+  {
+      width: 40%;
+      position: absolute;
+      top: -150%;
+      left: -1%;
+  }
+}
+  
+@media screen and (max-width: 1024px){
+  body header .logo{
+    width: 25%;
+  }
+
+  body header li{
+    font-size:2.5rem;
+  }
+
+  body main .leftdiv{
+    margin-left: 2%;
+  }
+
+  body main .left-div h1{
+    font-size: 4.5rem;
+  }
+  
+  body main .left-div h2{
+    font-size: 2.25rem;
+  }
+
+  body main .left-div p{
+    font-size: 1.4rem;
+    max-width: 550px;
+  }
+
+  body main .left-div a{
+    width: 65%;
+  }
+
+  body main .left-div .loja-btn{
+    width: 100%;
+  }
+
+  body main .right-div{
+    width: 50%;
+  }
+}
+
+/*footer*/
+
+footer{
+  margin-top: 1%;
+  background-color: rgb(77, 81, 123);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0fr 0fr;
+}
+
+footer div#waves
+{
+  margin-top: -1rem;
+  background-color: #14101d;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  width: 100%;
+}
+
+footer div#barra-busca 
+{
+  padding-top: 20%;
+  margin-top: -0.6rem;
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(77, 81, 123);
+}
+
+footer div#barra-busca input
+{
+  width: 80%;
+  height: 12%;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  padding-left: 20px;
+  font-size: 3rem;
+}
+
+div#barra-busca > div#txt
+{
+  margin-top: 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div#barra-busca > div#txt > p{
+  margin-top: 5%;
+  color: #dfebed;
+  font-family: "Labrada", Sans-Serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+div#barra-busca > div#txt > p > a{
+  color: #dfebed;
+  text-decoration: none;
+  font-family: "Labrada", Sans-Serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+footer div#logo-2{
+  margin-top: -0.6rem;
+  width: 100%;
+  grid-column: 2/3;
+  grid-row: 2/4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(77, 81, 123);
+  padding-bottom: 70%;
+}
+
+div#logo-2 > p{
+  color: #dfebed;
+  font-family: "Labrada", Sans-Serif;
+  font-weight: 700;
+  font-size: 2.6rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+div#logo-2 img{
+  position: relative; 
+  left: 12%;
+  width: 100%;
+}
+
+footer div#redes-sociais
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  background-color: rgb(77, 81, 123);
+}
+
+footer div#redes-sociais div#imagens{
+  margin-top: -0.6rem;
+  width: 100%;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: rgb(77, 81, 123);
+  padding-top: 15%;
+  padding-bottom: 10%;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+footer div#redes-sociais img{
+  width: 10%;
+  margin: 0 1rem;
+}
+
+footer div#redes-sociais div#texto
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer div#redes-sociais div#texto > p{
+  color: #dfebed;
+  text-align: center;
+  font-family: "Labrada", Sans-Serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  max-width: 80%;
+}
+
+
+.linha{
+  margin-top: 8px;
+  border-radius: 20px;
+  background-color: #dfebed;
+  height: 10px;
+  width: 41%;
+}

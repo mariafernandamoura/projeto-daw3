@@ -1,0 +1,343 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Labrada:wght@400;500;700;900&family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@800;900&display=swap');
+
+:root{
+  --cor0:#995f84;
+  --cor1:#5a969d;
+  --cor2:#3d416f;
+  --cor3:#ebebebee;
+  --cor4: #14101d;
+}
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html
+{
+  font-size: 62.5%;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    font-size: 1.6rem;
+    padding: 10px;
+    background-color: var(--cor4);
+    font-family: "Noto Sans","Sans Serif";
+}
+
+/*MENU*/
+.logo{
+  width: 100%;
+}
+  
+header{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+  
+li{
+  display: inline-block;
+  margin: 20px;
+  font-family: "Labrada",serif;
+  font-weight: 600;
+  font-size:2.3rem;
+  margin-left: 56px;
+  margin-right:32px;
+}
+        
+a{
+    margin-top: 15px;
+    margin-left: 28px;
+  color: var(--cor1);
+  text-decoration:none; 
+}
+
+a:hover
+{
+  color: var(--cor0);
+}
+
+div#container
+{
+    width: 100%; 
+    height: 88%; 
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+div#camada1
+{
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+div#camada1 img
+{
+    width: 5%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+div#camada1 img#f1
+{
+  position: relative;
+  top: 30%;
+  left: 75%;
+}
+
+div#camada1 img#f2
+{
+  position: relative;
+  top: 60%;
+  left: 46%;
+}
+
+div#camada1 img#f3
+{
+  position: relative;
+  top: 58%;
+  left: 61%;
+}
+
+#div-left{
+  background-color: var(--cor2);
+  width: 37%; 
+  height: 62.2%; 
+  border-radius: 10px 0px 0px 10px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+
+#nuvem
+{
+  width: 30%;
+  position: relative;
+  left: -2%;
+}
+
+#lua
+{
+  width: 30%;
+  position: relative;
+  top: -30%;
+  left: 35%;
+}
+
+#house
+{
+  width: 100%;
+  position: relative;
+  margin-bottom: 9%;
+  left: -20%;
+}
+
+#div-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+  background-color: var(--cor2);
+  width: 37%; 
+  height: 62.2%; 
+  border-radius: 0px 10px 10px 0px ;
+}
+
+#centralizador
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+h1{
+  font-family: 'Labrada', sans-serif;
+  color: #ebebebee;
+  font-size: 6rem;
+  margin-right: 15%;
+}
+
+#formulario{
+  width: 85%; 
+  height: 60%; 
+  background-color: rgb(77, 81, 123);
+  border-radius: 12px;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.562);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.rows{
+  width: 90%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  justify-content: center;    
+}
+
+#row3
+{
+  margin-top: -5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.posicionamento
+{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+input{
+  height: 70%;
+  margin-top:20px; 
+  color: rgb(68, 71, 90);
+  font-weight: 900;
+  font-size: 2.8rem;
+  padding: 20px 5px 5px;
+  background-color: rgb(219, 220, 229);
+  border: none;
+  border-radius:20px 20px 20px 20px;
+  outline: none!important;
+  padding-left: 10px;
+}
+
+label
+{
+    font-weight: 900;
+    font-family: "Noto Sans","Sans Serif";
+    color:  rgb(68, 71, 90);
+    font-size: 2.8rem;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+label.email
+{
+    position: relative;
+    top: -40%;
+    left: 2%;
+}
+
+input.email:focus ~ label.email,
+input.email:valid ~ label.email {
+  top: -55%;
+  left: 1%;
+  font-size: 1.6rem;
+  color: var(--cor0);
+}
+
+label.senha{
+  position: relative;
+  top: -40%;
+  left: 2%;
+}
+
+input.senha:focus ~ label.senha,
+input.senha:valid ~ label.senha {
+  top: -55%;
+  left: 2%;
+  font-size: 1.6rem;
+  color: var(--cor0);
+}
+
+#botao{
+  text-align: center;
+  background-color: var(--cor1);
+  color: var(--cor3);
+  padding-bottom: 20px;
+  height: 50%;
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 2.0rem;
+  font-family: "Noto Sans",serif;
+  font-style: black;
+  font-weight: 800;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+input#botao:hover{
+  background: linear-gradient(273deg,  var(--cor1),var(--cor0) );
+  background-size: 400% 400%;
+
+  -webkit-animation: AnimationName 4s ease infinite;
+  -moz-animation: AnimationName 4s ease infinite;
+  -o-animation: AnimationName 4s ease infinite;
+  animation: AnimationName 4s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 47%}
+  50%{background-position:100% 54%}
+  100%{background-position:0% 47%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 47%}
+  50%{background-position:100% 54%}
+  100%{background-position:0% 47%}
+}
+@-o-keyframes AnimationName {
+  0%{background-position:0% 47%}
+  50%{background-position:100% 54%}
+  100%{background-position:0% 47%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 47%}
+  50%{background-position:100% 54%}
+  100%{background-position:0% 47%}
+}
+
+
+#cad{
+  text-align: center;
+  color: rgb(216, 217, 226);
+  font-family: "Labrada", sans-serif;
+  font-size: 2.0rem;
+  letter-spacing: 0.75px;
+  padding: 0;
+  margin: 0;
+}
+
+a#cad:hover{
+letter-spacing: 0.5px;
+font-weight:600;
+}

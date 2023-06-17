@@ -1,0 +1,495 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Labrada:wght@400;500;700;900&family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@800;900&display=swap');
+
+:root{
+    --cor0:#995f84;
+    --cor1:#5a969d;
+    --cor2:rgb(61, 65, 111);
+    --cor3:#ebebebee;
+    --cor4:rgb(68, 71, 90);
+}
+
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html
+{
+  font-size: 62.5%;
+}
+
+body
+{
+  height: 100vh;
+  width: 100vw;
+  font-size: 1.6rem;
+  background-color: #14101d;
+  color: var(--cor2);
+  padding: 10px;
+}
+
+/*MENU*/
+.logo{
+  width: 100%;
+}
+  
+header{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+  
+li{
+  display: inline-block;
+  margin: 20px;
+  font-family: "Labrada",serif;
+  font-weight: 600;
+  font-size:2.3rem;
+  margin-left: 56px;
+  margin-right:32px;
+}
+        
+a{
+    margin-top: 15px;
+    margin-left: 28px;
+  color: var(--cor1);
+  text-decoration:none; 
+}
+
+a:hover
+{
+  color: var(--cor0);
+}
+
+/*FRENTE*/ 
+
+body div#container div#camada1
+{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+body div#container div#camada1 img
+{
+    width: 10%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+body div#container div#camada1 img#rip
+{
+    position: relative;
+    top: 55.5%;
+    left: 60%;
+}
+
+body div#container div#camada1 img#bat
+{
+    width: 15%;
+    position: relative;
+    top: 40%;
+    left: 49%;
+}
+
+body div#container div#camada1 img#pedra
+{
+    width: 18%;
+    position: relative;
+    top: 56%;
+    left: -1%;
+}
+
+body div#container div#camada1 img#nuvem-right-cima
+{
+    width: 13%;
+    position: relative;
+    top: -40%;
+    left: 22%;
+}
+
+body div#container div#camada1 img#nuvem-right-baixo
+{
+    width: 12%;
+    position: relative;
+    top: -12%;
+    left: 7%;
+}
+
+body div#container div#camada1 img#nuvem-left
+{
+    width: 12%;
+    position: relative;
+    top: -20%;
+    left: -42%;
+}
+
+/*FUNDO*/
+
+body div#container div#arvore
+{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+body div#container div#arvore img#arvore-left
+{
+    position: relative;
+    left: 0;
+    width: 39.8%;
+    pointer-events: none;
+
+}
+
+body div#container div#arvore img#arvore-right
+{
+    position: relative;
+    right: -20%;
+    width: 39.8%;
+    pointer-events: none;
+}
+
+
+
+/* Centralização do formulário */
+body div#container
+{
+  width: 99%;
+  height: 88%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+body div#container main
+{
+    color: var(--cor3);
+    background-color: var(--cor2);
+    width: 50%;
+    height: 80%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body div#container main form
+{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body div#container main h1
+{
+    color: var(--cor3);
+    font-size: 5.0rem;
+    font-family: "Labrada", sans-serif;
+    margin-top: 4%;
+}
+
+.rows{
+    width: 90%;
+    height: 14%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    justify-content: space-between;    
+}
+
+.posicionamento
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#row6
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+input{
+    font-family: "Noto Sans","Sans Serif";
+    margin-top:20px;
+    height: 70%;
+    color: var(--cor4);
+    font-weight: 900;
+    font-size: 2.8rem;
+    padding: 20px 5px 5px;
+    background-color: rgb(219, 220, 229);
+    border: none;
+    border-radius:20px 20px 20px 20px;
+    outline: none!important;
+    opacity: 1;
+    padding-left: 1rem;
+}
+
+label
+{
+    font-weight: 900;
+    font-family: "Noto Sans","Sans Serif";
+    color: black;
+    font-size: 2.8rem;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+input.nome{
+    width: 95%;
+}
+
+label.nome{
+    position: relative;
+    top: -55%;
+    left: 5%;
+}
+
+input.nome:focus ~ label.nome,
+input.nome:valid ~ label.nome {
+    top: -65%;
+    left: 3%;
+  font-size: 1.6rem;
+  color: var(--cor0);
+}
+            
+input.sobrenome{
+    width: 100%;
+}
+
+label.sobrenome
+{
+    position: relative;
+    top: -50%;
+    left: 5%;
+}
+
+
+input.sobrenome:focus ~ label.sobrenome,
+input.sobrenome:valid ~ label.sobrenome {
+    top: -65%;
+    left: 3%;
+  font-size: 1.6rem;
+  color: var(--cor0);
+}
+            
+
+input.email
+{
+    width: 100%;
+}
+
+label.email
+{
+    position: relative;
+    top: -55%;
+    left: 2%;
+}
+
+input.email:focus ~ label.email,
+input.email:valid ~ label.email {
+    top: -65%;
+    left: 1%;
+  font-size: 1.6rem;
+  color: var(--cor0);
+}
+
+input.tel
+{
+    width: 100%
+}
+
+label.tel
+{
+    position: relative;
+    top: -55%;
+    left: 5%;
+}
+
+input.tel:focus ~ label.tel,
+input.tel:valid ~ label.tel {
+    top: -65%;
+    left: 3%;
+  font-size: 1.6rem;
+  color: var(--cor0);
+}
+
+input.cpf
+{
+    margin-left: -15%;
+    width: 115%;
+}
+
+label.cpf
+{
+    position: relative;
+    top: -55%;
+    left: -10%;
+}
+
+input.cpf:focus ~ label.cpf,
+input.cpf:valid ~ label.cpf {
+    top: -65%;
+    left: -12%;
+  font-size: 1.6rem;
+  color: var(--cor0);
+}
+
+input.idade
+{
+    width: 55%;
+}
+
+label.idade
+{
+    position: relative;
+    top: -55%;
+    left: 5%;
+}
+
+input.idade:focus ~ label.idade,
+input.idade:valid ~ label.idade {
+    top: -65%;
+    left: 2%;
+  font-size: 1.6rem;
+  color: var(--cor0);
+}
+
+input.cep
+{
+    margin-left:15%;
+    width: 85%
+}
+
+label.cep
+{
+    position: relative;
+    top: -55%;
+    left: 20%;
+}
+
+input.cep:focus ~ label.cep,
+input.cep:valid ~ label.cep {
+    top: -65%;
+    left: 18%;
+  font-size: 1.6rem;
+  color: var(--cor0);
+}
+
+input.senha{
+    width: 60%;
+}
+
+label.senha{
+    position: relative;
+    top: -55%;
+    left: 2%;
+}
+
+input.senha:focus ~ label.senha,
+input.senha:valid ~ label.senha {
+    top: -65%;
+    left: 2%;
+  font-size: 1.6rem;
+  color: var(--cor0);
+}
+
+#botao{
+    text-align: center;
+    background-color: var(--cor1);
+    color: var(--cor3);
+    padding-bottom: 20px;
+    height: 50%;
+    width: 40%;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-size: 2.0rem;
+    font-family: "Noto Sans",serif;
+    font-style: black;
+    font-weight: 800;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+input#botao:hover{
+    background: linear-gradient(273deg, var(--cor1),var(--cor0) );
+    background-size: 400% 400%;
+  
+    -webkit-animation: AnimationName 4s ease infinite;
+    -moz-animation: AnimationName 4s ease infinite;
+    -o-animation: AnimationName 4s ease infinite;
+    animation: AnimationName 4s ease infinite;
+  }
+  
+  @-webkit-keyframes AnimationName {
+    0%{background-position:0% 47%}
+    50%{background-position:100% 54%}
+    100%{background-position:0% 47%}
+  }
+  @-moz-keyframes AnimationName {
+    0%{background-position:0% 47%}
+    50%{background-position:100% 54%}
+    100%{background-position:0% 47%}
+  }
+  @-o-keyframes AnimationName {
+    0%{background-position:0% 47%}
+    50%{background-position:100% 54%}
+    100%{background-position:0% 47%}
+  }
+  @keyframes AnimationName {
+    0%{background-position:0% 47%}
+    50%{background-position:100% 54%}
+    100%{background-position:0% 47%}
+  }
+  
+a#link
+{
+    font-family: "Labrada", sans-serif;
+    font-size: 2.4rem;
+    margin-top: 10px;
+    padding: 0;
+}
+
+
+@media screen and (min-width: 1900px){
+    
+    .logo{ 
+       width: 300px;
+    }
+  
+    li
+    {
+    font-family: 'Labrada', sans-serif;
+    display: inline-block;
+    margin: 10px;
+    font-weight: 600;
+    font-size:28px;
+    margin-left: 56px;
+    margin-right:32px;
+    }
+  }
+  
