@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135.12 137.39">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: #dfebed;
+      }
+
+      .cls-2, .cls-5 {
+        font-size: 18.36px;
+        letter-spacing: .1em;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        font-family: Labrada-Bold, Labrada;
+      }
+
+      .cls-3 {
+        font-size: 26px;
+        letter-spacing: .03em;
+      }
+
+      .cls-6 {
+        font-size: 58px;
+        letter-spacing: .03em;
+      }
+
+      .cls-7 {
+        font-size: 25.71px;
+        letter-spacing: .1em;
+      }
+
+      .cls-8 {
+        font-size: 45px;
+        letter-spacing: .03em;
+      }
+    </style>
+  </defs>
+  <g id="Camada_1-2" data-name="Camada 1">
+    <g>
+      <text class="cls-4" transform="translate(7.65 47.56)"><tspan class="cls-6" x="0" y="0">10</tspan><tspan class="cls-8" x="57.71" y="0">%</tspan></text>
+      <text class="cls-3" transform="translate(54.01 74.41)"><tspan x="0" y="0">OFF </tspan></text>
+    </g>
+    <g>
+      <text class="cls-2" transform="translate(0 109.57)"><tspan x="0" y="0">SOMENTE NA</tspan></text>
+      <text class="cls-4" transform="translate(1.64 130.35)"><tspan class="cls-7" x="0" y="0" xml:space="preserve">1  </tspan><tspan class="cls-5" x="27.33" y="0">COMPRA</tspan></text>
+      <circle class="cls-1" cx="15.95" cy="119.8" r="2.65"/>
+    </g>
+  </g>
+</svg>
